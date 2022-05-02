@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
+import Post from './Components/Post/Post';
+import CreatePosts from './Components/CreatePosts/CreatePosts';
+import NavBar from './Components/NavBar/NavBar';
 
 function App() {
   return (
