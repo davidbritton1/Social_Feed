@@ -1,37 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-import ReactDOM  from 'react-dom';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import Post from './Components/Post/Post';
 import CreatePosts from './Components/CreatePosts/CreatePosts';
 import NavBar from './Components/NavBar/NavBar';
-import React, { useState } from 'react';
+import React from 'react';
 
 
 
-function App() {
+function App(props) {
 
-  // const [initialPost, setInitialPost] = useState([{Name:'', Post:''}])
-
+  console.log(props);
 
   return (
     <div>
       <div>
-        <form action='' method='post'>
-          <label for='first_name'>First Name: </label>
-          <input type='text' name='first_name'></input>
-          <label for='last name'>Last Name: </label>
-          <input type='text' name='last_name'></input>
-
-        </form>
+        {/* CreatePost */}
+        <CreatePosts createposts={props.CreatePosts}/>
       </div>
-      
       <div>
-        <h3>Name</h3>
-        <p>actual post blah blah blah</p>
-        <button>Like</button>
-        <button>Dislike</button>
+        {/* Post */}
+        <Post post={props.post}/>
       </div>
+
 
     </div>
   );
