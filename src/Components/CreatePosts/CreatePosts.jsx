@@ -1,5 +1,7 @@
 const CreatePosts = (props) => {
-    return (  );
+    return (  ''
+
+    );
 }
  
 export default CreatePosts;

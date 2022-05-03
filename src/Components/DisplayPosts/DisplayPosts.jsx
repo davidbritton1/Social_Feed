@@ -1,5 +1,5 @@
 const DisplayPosts = (props) => {
-    return (  );
+    return ( '' );
 }
  
 export default DisplayPosts;

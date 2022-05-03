@@ -1,5 +1,5 @@
 const NavBar = (props) => {
-    return (  );
+    return ( '' );
 }
  
 export default NavBar;
