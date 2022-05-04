@@ -14,6 +14,10 @@ function App(props) {
   return (
     <div>
       <div>
+        {/* NavBar */}
+        <NavBar navbar={props.NavBar}/>
+      </div>
+      <div>
         {/* CreatePost */}
         <CreatePosts createposts={props.CreatePosts}/>
       </div>
@@ -21,8 +25,10 @@ function App(props) {
         {/* Post */}
         <Post post={props.post}/>
       </div>
-
-
+      <div>
+        {/* DisplayPosts */}
+        <DisplayPosts displayPosts={props.displayPosts}/>
+      </div>
     </div>
   );
 }
